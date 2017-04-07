@@ -114,8 +114,11 @@ melon.haifeng@gmail.com
 
 # REFERENCES
 [1] Thomas, Yannis, et al. "Object-oriented Packet Caching for ICN" Proceedings of the 2nd international conference on Information-centric networking. ACM, 2015.
+
 [2] Rossini G, Rossi D, Garetto M, et al. Multi-terabyte and multi-gbps information centric routers[C]//INFOCOM, 2014 Proceedings IEEE. IEEE, 2014: 181-189.
+
 [3] Chai, Wei Koong, et al. "Cache “less for more” in information-centric networks." NETWORKING 2012. Springer Berlin Heidelberg, 2012. 27-40.
+
 [4] Kim Y, Tauras B, Gupta A, et al. Flashsim: A simulator for nand flash-based solid-state drives[C]//Advances in System Simulation, 2009. SIMUL'09. First International Conference on. IEEE, 2009: 125-131.
 [5] Kim Y, Yang W, Mutlu O. Ramulator: A fast and extensible DRAM simulator[J]. IEEE Computer Architecture Letters, 2016, 15(1): 45-49.
 
