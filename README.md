@@ -98,7 +98,7 @@ $ git clone https://github.com/iplab2016/ccncaching-HCaching
 
 
 
-##configure and make it
+## configure and make it
 
 ```shell
 $ cd ../../
@@ -106,13 +106,10 @@ $ CXXFLAGS="-std=c++11" LINKFLAGS="-lbf -lpthread" ./waf configure --enable-test
 $ ./waf
 ```
 
-#Note
+# Note
 If there is not libbf library, please install it as [libbf github wiki](https://github.com/iplab2016/libbf)
 
 # CONTACT
-Yannis Thomas
-thomasi@aueb.gr
-
 Melon Li
 melon.haifeng@gmail.com
 
