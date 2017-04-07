@@ -1,4 +1,4 @@
-On the basis of Yannis's "ccncaching" in ns-3, ccnhcaching implements LRU, OPC [1], SSD_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
+On the basis of Yannis's "ccncaching" in ns-3, ccnhcaching implements LRU, OPC [1], SSD\_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
 
 This module was tested only in ns-3-allinone.3.18, please follow the ns-3 instractions to set up ns-3 and the module as follow. 
 
