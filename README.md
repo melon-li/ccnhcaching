@@ -1,8 +1,6 @@
-This is the ns-3 module, called "ccncaching-HCaching".
+On the basis of Yannis's "ccncaching" in ns-3, ccnhcaching implements LRU, OPC [1], SSD_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
 
-On the basis of Yannis's "ccncaching", ccncaching-HCaching implements OPC [1] HCaching [2] in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
-
-This module was tested only in ns-3-allinone.3.18, therefore follow the ns-3 instractions to set up ns-3 and the module as follow. For more details, please read the [ccncaching-HCaching-wiki](https://github.com/iplab2016/ccncaching-HCaching/wiki).
+This module was tested only in ns-3-allinone.3.18, please follow the ns-3 instractions to set up ns-3 and the module as follow. 
 
 # Installation ns-3.18.1
 
@@ -86,13 +84,13 @@ $ ./build.py
 
 # Install ccncaching module
 
-## Download ccncaching-HCaching source code
+## Download ccnhcaching source code
 ```shell
 $ cd ns-3.18.1/src/
 ```
 
 ```shell
-$ git clone https://github.com/iplab2016/ccncaching-HCaching
+$ git clone https://github.com/iplab2016/ccnhcaching
 ```
 
 
@@ -115,9 +113,8 @@ melon.haifeng@gmail.com
 
 # REFERENCES
 [1] Thomas, Yannis, et al. "Object-oriented Packet Caching for ICN" Proceedings of the 2nd international conference on Information-centric networking. ACM, 2015.
-
-[2] H. Li,et all. "High-speed Caching for Information Centric Routers".
-
+[2] Rossini G, Rossi D, Garetto M, et al. Multi-terabyte and multi-gbps information centric routers[C]//INFOCOM, 2014 Proceedings IEEE. IEEE, 2014: 181-189.
 [3] Chai, Wei Koong, et al. "Cache “less for more” in information-centric networks." NETWORKING 2012. Springer Berlin Heidelberg, 2012. 27-40.
-
+[4] Kim Y, Tauras B, Gupta A, et al. Flashsim: A simulator for nand flash-based solid-state drives[C]//Advances in System Simulation, 2009. SIMUL'09. First International Conference on. IEEE, 2009: 125-131.
+[5] Kim Y, Yang W, Mutlu O. Ramulator: A fast and extensible DRAM simulator[J]. IEEE Computer Architecture Letters, 2016, 15(1): 45-49.
 
