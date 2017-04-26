@@ -32,10 +32,8 @@ Based on these latency simulations, CCNHCaching can exactly simulate throughput 
 
 
 
-
-
-
-This module was tested only in ns-3-allinone.3.18, please follow the ns-3 instractions to set up ns-3 and the module as follow. 
+This simulator is just alpha version. 
+It was tested only in ns-3-allinone.3.18, please follow the ns-3 instractions to set up ns-3 and the module as follow. 
 
 # Installation ns-3.18.1
 
