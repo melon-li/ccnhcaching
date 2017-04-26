@@ -1,5 +1,39 @@
-On the basis of Yannis's "ccncaching" in ns-3, ccnhcaching is equipped with **the capacity which simulates throughput of ICN cache routers**, and implements LRU, OPC [1], SSD\_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3]. The architecure is shown as follow:
+On the basis of Thomas "ccncaching" in ns-3, CCNHCaching is equipped with **the capacity which simulates throughput of ICN cache routers**, and implements LRU, OPC [1], SSD\_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
+CCNHCaching architecure is shown as follow:
 ![](https://github.com/iplab2016/wiki/blob/master/ccncaching-HCaching/images/ccnhcaching-v3.jpg)
+Fig. 1. The CCNHCaching system structure.
+
+
+Fig. 1a depicts CCNHCaching structural diagram.
+Interfaces in CCNHCaching is realized based on point-to-point model of NS-3, which puts bits on a corresponding channel "wire".
+Point-to-point network device models egress that can send bits at certain data-rate with egress queue.
+The receiving device models ingress interface without ingress queue, that can receive any data rate queue.
+Therefore, there is no need, nor way to set a receive data rate in this model.
+By setting the data-rate on the transmitter of both devices connected to a given point-to-point-channel one can model a symmetric channel;or by setting different data-rates one can model an asymmetric channel.
+
+Three main components form CCNHCaching: Pending Interest Table (PIT), Forwarding Information Base (FIB) and Content Store (CS).
+PIT keeps track of the content items that have recently been requested and not yet responded.
+FIB is a table that associates prefixes of content names to one or multiple next hop ICN routers.
+CS plays the role of buffer and caching system, which store content after it have been forwarded to serve future requests.
+Specially, we implement CS with our high-speed caching throughput simulating.
+
+Fig. 1b presents CS structural diagram.
+CS can be organized by one or multiple types of memories, whose access time is simulating by respective simulator.
+These memories simulators include SSD simulator, SRAM simulator and DRAM simulator. 
+Upon reception of an user request on an ingress \emph{I}, CCNHCaching checks for the requested content availability in CS.
+If the content is available, CS send it back through \emph{I}.
+Otherwise, CCNHCaching forwards out the request and wait for this content.
+Read commands from memory simulators are pushed to Read Command Queue, and write commands are pushed to Write Command Queue.
+Read/write commands are not popped from respective queue until routers finish reading or writing content from memories.
+The popup operations are executed exactly at access time of memories.
+After reading/writing content from CS, CCNHCaching can obtain the operating latency from memory simulators.
+This latency is added to current simulation time, and used as scheduling time of next event. 
+Based on these latency simulations, CCNHCaching can exactly simulate throughput of caching system.
+
+
+
+
+
 
 This module was tested only in ns-3-allinone.3.18, please follow the ns-3 instractions to set up ns-3 and the module as follow. 
 
