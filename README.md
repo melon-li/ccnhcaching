@@ -1,3 +1,11 @@
+
+If you apply these codes in your futher papers, you would cite these relevant papers:
+- H. Li, H. Zhou, W. Quan, H. Zhang and S. Yu, "HCaching: High-speed Caching for Information-Centric Networking," submitted to *GLOBECOM 2017*.
+- W.~Quan, C.~Xu, J.~Guan, H.~Zhang, and L.~A. Grieco, ''Scalable name lookup with adaptive prefix bloom filter for named data networking,'' *IEEE Communications Letters*, vol.~18, pp. 102--105, 2014.
+- Thomas, Yannis *et al*, "Object-oriented Packet Caching for ICN," *ACM Proceedings of the 2nd international conference on Information-centric networking*, 2015.
+
+
+# Design Overview
 On the basis of Thomas "ccncaching" in ns-3, CCNHCaching is equipped with **the capacity which simulates throughput of ICN cache routers**, and implements LRU, OPC [1], SSD\_DRAM [2], HCaching caching systems in three differenct cache placement policies: edge caching, univercal caching and betweenness caching[3].
 CCNHCaching architecure is shown as follow:
 ![](https://github.com/iplab2016/wiki/blob/master/ccncaching-HCaching/images/ccnhcaching-v3.jpg)
