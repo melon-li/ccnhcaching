@@ -13,9 +13,9 @@ Fig. 1. The CCNHCaching system structure.
 
 
 Fig. 1a depicts CCNHCaching structural diagram.
-Interfaces in CCNHCaching is realized based on point-to-point model of NS-3, which puts bits on a corresponding channel "wire".
+Interfaces in CCNHCaching are realized based on point-to-point model of NS-3, which puts bits on a corresponding channel "wire".
 Point-to-point network device models egress that can send bits at certain data-rate with egress queue.
-The receiving device models ingress interface without ingress queue, that can receive any data rate queue.
+The receiving device models ingress interface without ingress queue, that can receive data at any rate.
 Therefore, there is no need, nor way to set a receive data rate in this model.
 By setting the data-rate on the transmitter of both devices connected to a given point-to-point-channel one can model a symmetric channel;or by setting different data-rates one can model an asymmetric channel.
 
@@ -28,8 +28,8 @@ Specially, we implement CS with our high-speed caching throughput simulating.
 Fig. 1b presents CS structural diagram.
 CS can be organized by one or multiple types of memories, whose access time is simulating by respective simulator.
 These memories simulators include SSD simulator, SRAM simulator and DRAM simulator. 
-Upon reception of an user request on an ingress \emph{I}, CCNHCaching checks for the requested content availability in CS.
-If the content is available, CS send it back through \emph{I}.
+Upon reception of an user request on an ingress *I*, CCNHCaching checks for the requested content availability in CS.
+If the content is available, CS send it back through *I*.
 Otherwise, CCNHCaching forwards out the request and wait for this content.
 Read commands from memory simulators are pushed to Read Command Queue, and write commands are pushed to Write Command Queue.
 Read/write commands are not popped from respective queue until routers finish reading or writing content from memories.
