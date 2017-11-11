@@ -1,6 +1,6 @@
 
 If you apply these codes in your futher papers, you would cite these relevant papers:
-- H. Li, H. Zhou, W. Quan, H. Zhang and S. Yu, "HCaching: High-speed Caching for Information-Centric Networking," submitted to *GLOBECOM*, 2017.
+- H. Li, H. Zhou, W. Quan, H. Zhang and S. Yu, "HCaching: High-speed Caching for Information-Centric Networking," accepted in *GLOBECOM*, 2017.
 - W. Quan, C. Xu, J. Guan, H. Zhang, and L. A. Grieco, ''Scalable name lookup with adaptive prefix bloom filter for named data networking,'' *IEEE Communications Letters*, vol.~18, pp. 102--105, 2014.
 - Thomas, Yannis *et al.*, "Object-oriented Packet Caching for ICN," *ICN*, 2015.
 
